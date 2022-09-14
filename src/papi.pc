@@ -1,0 +1,11 @@
+prefix=/home/s200010035/papi/src/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: PAPI
+Description: Performance API to access performance metrics on system
+Version: 6.0.0.1
+Libs: -L${libdir} -lpapi
+Libs.private: 
+Cflags: -I${includedir}
